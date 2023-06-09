@@ -1,0 +1,12 @@
+{
+  "extends": "@tsconfig/svelte/tsconfig.json",
+  "target": "es6",
+  "lib": ["es6", "es2015", "dom", "es2017"],
+  "module": "esnext",
+  "moduleResolution": "Node",
+  "declaration": true,
+  "declarationDir": "./public/build",
+  "outDir": "./public/build",
+  "include": ["src/**/*"],
+  "exclude": ["node_modules/*", "__sapper__/*", "public/*"]
+}
