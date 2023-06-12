@@ -102,8 +102,8 @@ export const updatePopperInstance = async <
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   TModifier extends Partial<Modifier<any, any>>
 >(
-  getPopperInstance: () => Instance,
+  popperInstance: Instance,
   options: PopperOptions<TModifier>
 ) => {
-  getPopperInstance().setOptions(options);
+  popperInstance.setOptions(options);
 };

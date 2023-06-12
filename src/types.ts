@@ -15,3 +15,5 @@ export interface SlashMenuProps {
     [key: string]: () => Node;
   };
 }
+
+export type IconConfig = Record<string, ()=> HTMLElement>

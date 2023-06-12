@@ -2,7 +2,10 @@
   import type { EditorState } from "prosemirror-state";
   import type { EditorView } from "prosemirror-view";
 
-export const getVirtualReference = (editorView: EditorView, editorState: EditorState)=> {
+  export const getVirtualReference = (
+    editorView: EditorView,
+    editorState: EditorState
+  ) => {
     const domNode = editorView.domAtPos(editorState.selection.to)?.node;
     if (!(domNode instanceof HTMLElement)) return;
     const { top, left, height } = domNode.getBoundingClientRect();
@@ -32,6 +35,5 @@ export const getVirtualReference = (editorView: EditorView, editorState: EditorS
         };
       },
     };
-  }
-  </script>
-  
+  };
+</script>

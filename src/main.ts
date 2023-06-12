@@ -13,4 +13,3 @@ export const SvelteApp = App;
 // 	}
 // });
 
-export default App;

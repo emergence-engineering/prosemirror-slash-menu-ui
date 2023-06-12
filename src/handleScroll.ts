@@ -42,6 +42,7 @@ export const handleScroll = (menuState: SlashMenuState, rootRef: HTMLDivElement)
     }
   }
 
-  export const handleScrollToTop = (rootRef: HTMLDivElement, filteredElements: MenuElement[])=> {
+  export const handleScrollToTop = (filteredElements: MenuElement[], rootRef?: HTMLDivElement)=> {
+    if(!rootRef) return;
     rootRef.scrollTop = 0;
   }
